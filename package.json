@@ -1,0 +1,54 @@
+{
+  "name": "billing-form",
+  "version": "1.0.0",
+  "description": "Billing form example",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/babel-node server",
+    "postinstall": "./node_modules/.bin/babel-node deploy",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gretchenfitze/billing-form.git"
+  },
+  "author": "gretchenfitze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gretchenfitze/billing-form/issues"
+  },
+  "homepage": "https://billing-form.herokuapp.com/",
+  "dependencies": {
+    "autoprefixer": "^6.5.1",
+    "babel": "^6.5.2",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "banks-db": "^0.10.7",
+    "css-loader": "^0.25.0",
+    "express": "^4.14.0",
+    "fast-luhn": "^1.0.3",
+    "file-loader": "^0.9.0",
+    "http-proxy": "^1.15.2",
+    "json-loader": "^0.5.4",
+    "postcss-banks-db": "^0.7.0",
+    "postcss-contrast": "^0.0.4",
+    "postcss-loader": "^1.1.0",
+    "postcss-nested": "^1.0.0",
+    "postcss-normalize": "^0.3.0",
+    "style-loader": "^0.13.1",
+    "vanilla-masker": "^1.0.9",
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.5.0"
+  }
+}

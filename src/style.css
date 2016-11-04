@@ -1,0 +1,80 @@
+@font-face {
+  font-family: Halter;
+  src: url(font/HALTER__.ttf);
+}
+
+.card {
+  margin: 30px;
+  width: 428px;
+  height: 270px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background: #fafafa;
+  box-shadow: 1px 1px 3px #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Courier New, monospace;
+  -webkit-transition: background 0.6s, color 0.6s;
+  transition: background 0.6s, color 0.6s;
+
+  &-bank-name {
+    margin: 20px 35px;
+    font-size: 30px;
+  }
+
+  &-input {
+    position: absolute;
+    left: 65px;
+    padding: 5px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.4);
+    color: rgba(84, 110, 122, 0.5);
+    text-shadow: -0.75px -0.75px #fff, 0.75px 0.75px 0 #000;
+    font-size: 15px;
+    font-family: Halter, monospace;
+
+    &::-webkit-input-placeholder {
+      color: rgba(84, 110, 122, 0.2);
+      text-shadow: none;
+    }
+  }
+
+  &-number {
+    top: 150px;
+    width: 350px;
+    font-size: 20px;
+  }
+
+  &-date {
+    top: 200px;
+    left: 230px;
+    width: 65px;
+
+    &-label {
+      position: absolute;
+      top: 205px;
+      left: 195px;
+      width: 25px;
+      font-size: 10px;
+      font-family: Arial, sans-serif;
+    }
+  }
+
+  &holder {
+    top: 245px;
+    width: 275px;
+    text-transform: uppercase;
+  }
+}
+
+.invalid {
+  outline-color: #f44336;
+  color: #f44336;
+}
+
+@banks-db-template {
+  .billing-form.is-%code% {
+    background-color: %color%;
+    color: contrast(%color%);
+  }
+}
