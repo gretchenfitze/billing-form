@@ -1,0 +1,9 @@
+{
+  "plugins": {
+    "autoprefixer": {},
+    "postcss-normalize": {},
+    "postcss-nested": {},
+    "postcss-banks-db": {},
+    "postcss-contrast": {},
+  }
+}

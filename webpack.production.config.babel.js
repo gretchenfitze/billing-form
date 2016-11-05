@@ -39,14 +39,7 @@ export default {
     },
     {
       test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
-      loader: 'file-loader',
+      loader: 'file',
     }],
   },
-  postcss: () => [
-    require('autoprefixer'),
-    require('postcss-normalize'),
-    require('postcss-nested'),
-    require('postcss-banks-db'),
-    require('postcss-contrast'),
-  ],
 };
