@@ -4,9 +4,9 @@ import banksDB from 'banks-db';
 import './style.css';
 
 const billingForm = document.querySelector('.card');
-const bankName = document.querySelector('.card-bank-name');
-const cardNumber = document.getElementById('card-number');
-const cardDate = document.getElementById('card-date');
+const bankName = document.querySelector('.card__bank-name');
+const cardNumber = document.getElementById('card__input_number');
+const cardDate = document.getElementById('card__input_date');
 
 masker(cardNumber).maskPattern('9999 9999 9999 9999 99');
 masker(cardDate).maskPattern('99/99');
@@ -16,7 +16,7 @@ cardNumber.addEventListener('input', (event) => {
   const bank = banksDB(number);
 
   if (number.length >= 14) {
-    cardNumber.classList.toggle('invalid', !luhn(number.split(' ').join('')));
+    cardNumber.classList.toggle('is-invalid', !luhn(number.split(' ').join('')));
   }
 
   if (bank.code) {
