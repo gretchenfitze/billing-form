@@ -50,11 +50,6 @@
       top: 150px;
       width: 350px;
       font-size: 20px;
-
-      &.is-invalid {
-        outline-color: #f44336;
-        color: #f44336;
-      }
     }
 
     &_date {
@@ -68,9 +63,13 @@
       width: 275px;
       text-transform: uppercase;
     }
+
+    &_invalid {
+      outline-color: #f44336;
+      color: #f44336;
+    }
   }
 }
-
 
 @banks-db-template {
   .billing-form.is-%code% {
