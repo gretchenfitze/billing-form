@@ -1,6 +1,6 @@
 @font-face {
   font-family: Halter;
-  src: url(font/Halter.woff2);
+  src: url(font/Halter.woff2) format('woff2'), url(font/Halter.woff) format('woff');
 }
 
 .card {
