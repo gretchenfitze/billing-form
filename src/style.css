@@ -72,7 +72,7 @@
 }
 
 @banks-db-template {
-  .billing-form.is-%code% {
+  .card_bank-%code% {
     background-color: %color%;
     color: contrast(%color%);
   }

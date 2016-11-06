@@ -20,10 +20,10 @@ cardNumber.addEventListener('input', (event) => {
   }
 
   if (bank.code) {
-    billingForm.className = (`card billing-form is-${(bank.code || 'other')}`);
+    billingForm.classList.add(`card_bank-${(bank.code || 'other')}`);
     bankName.innerText = bank.country === 'ru' ? bank.localTitle : bank.engTitle;
   } else {
-    billingForm.className = 'card billing-form';
+    billingForm.className = 'card';
     bankName.innerText = '';
   }
 });
