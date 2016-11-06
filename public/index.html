@@ -7,7 +7,7 @@
   <body>
   <form class="card" >
     <p class="card__bank-name"></p>
-    <input type="text" id="card__input_number" class="card__input card__input_number" placeholder="XXXX XXXX XXXX XXXX" pattern="[0-9]{14,23}" required autofocus autocomplete="cc-number" name="cardnumber">
+    <input type="text" id="card__input_number" class="card__input card__input_number" placeholder="XXXX XXXX XXXX XXXX" pattern="[0-9\s]{14,23}" required autofocus autocomplete="cc-number" name="cardnumber">
     <label for="card__input_month" class="card__label">VALID THRU</label>
     <input type="text" id="card__input_month" class="card__input card__input_date card__input_month" placeholder="MM" pattern="[0-9]{1,2}" required autocomplete="cc-exp-month" name="ccmonth">
     <p class="card__date-separator">/</p>
