@@ -17,6 +17,8 @@ cardNumber.addEventListener('input', (event) => {
 
   if (number.length >= 14) {
     cardNumber.classList.toggle('card__input_invalid', !luhn(number.split(' ').join('')));
+  } else {
+    cardNumber.classList.remove('card__input_invalid');
   }
 
   if (bank.code) {
