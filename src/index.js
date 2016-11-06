@@ -9,7 +9,7 @@ const cardNumber = document.getElementById('card__input_number');
 const cardDate = document.getElementById('card__input_date');
 
 masker(cardNumber).maskPattern('9999 9999 9999 9999 99');
-masker(cardDate).maskPattern('99/99');
+masker(cardDate).maskPattern('99/9999');
 
 cardNumber.addEventListener('input', (event) => {
   const number = event.target.value;
