@@ -29,6 +29,16 @@
     font-family: Arial, sans-serif;
   }
 
+  &__date-separator {
+    position: absolute;
+    top: 185px;
+    left: 280px;
+    color: rgba(84, 110, 122, 0.5);
+    text-shadow: -1px -1px #fff, 1px 1px 0 #000;
+    font-size: 20px;
+    font-family: Halter, monospace;
+  }
+
   &__input {
     position: absolute;
     left: 60px;
@@ -51,10 +61,16 @@
       font-size: 20px;
     }
 
-    &_date {
+    &_month {
       top: 200px;
       left: 230px;
-      width: 90px;
+      width: 30px;
+    }
+
+    &_year {
+      top: 200px;
+      left: 300px;
+      width: 55px;
     }
 
     &_cardholder {

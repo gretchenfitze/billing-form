@@ -6,10 +6,12 @@ import './style.css';
 const billingForm = document.querySelector('.card');
 const bankName = document.querySelector('.card__bank-name');
 const cardNumber = document.getElementById('card__input_number');
-const cardDate = document.getElementById('card__input_date');
+const cardMonth = document.getElementById('card__input_month');
+const cardYear = document.getElementById('card__input_year');
 
 masker(cardNumber).maskPattern('9999 9999 9999 9999 99');
-masker(cardDate).maskPattern('99/9999');
+masker(cardMonth).maskPattern('99');
+masker(cardYear).maskPattern('9999');
 
 cardNumber.addEventListener('input', (event) => {
   const number = event.target.value;
