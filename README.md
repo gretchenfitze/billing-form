@@ -7,7 +7,7 @@ Demo page for user-friendly billing form features:
 - [`banks-db`](https://github.com/ramoona/banks-db)  for nicer appearance
 - [Halter font](http://www.dafont.com/halter.font?text=ssfrshgrsdeh) for easier comparing
 
-![banks-db Postbank](https://raw.githubusercontent.com/gretchenfitze/billing-form/master/screenshots/repo-boa.png)
+![banks-db Google Wallet](https://raw.githubusercontent.com/gretchenfitze/billing-form/master/screenshots/repo-google.gif)
 
 ##Demo
 
