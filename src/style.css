@@ -79,6 +79,11 @@
       text-transform: uppercase;
     }
 
+    &_valid {
+      background: rgba(255, 255, 255, 0.4) url('checkmark.svg') no-repeat 345px;
+      background-size: 20px;
+    }
+
     &_invalid {
       outline-color: #f44336;
       color: #f44336;

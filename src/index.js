@@ -18,9 +18,11 @@ cardNumber.addEventListener('input', (event) => {
   const bank = banksDB(number);
 
   if (number.length >= 14) {
-    cardNumber.classList.toggle('card__input_invalid', !luhn(number.split(' ').join('')));
+    const isLuhnCheckPassed = luhn(number.split(' ').join(''));
+    cardNumber.classList.toggle('card__input_invalid', !isLuhnCheckPassed);
+    cardNumber.classList.toggle('card__input_valid', isLuhnCheckPassed);
   } else {
-    cardNumber.classList.remove('card__input_invalid');
+    cardNumber.classList.remove('card__input_invalid', 'card__input_valid');
   }
 
   if (bank.code) {
