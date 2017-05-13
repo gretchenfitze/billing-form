@@ -1,4 +1,4 @@
-#Billing Form Example
+## Billing Form Example
 
 Demo page for user-friendly billing form features:
 - suitable `autocomplete`, `name` and `pattern` attributes
@@ -9,11 +9,11 @@ Demo page for user-friendly billing form features:
 
 ![banks-db Google Wallet](https://raw.githubusercontent.com/gretchenfitze/billing-form/master/screenshots/repo-google.gif)
 
-##Demo
+## Demo
 
 Demo page is available [here](https://billing-form.herokuapp.com/).
 
-##Installation
+## Installation
 
 To run the demo locally, clone or download current repository, then type:
 ```
